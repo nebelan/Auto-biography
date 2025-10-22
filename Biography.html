@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Biography</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.932);
+
+
+}
+a {
+   color: #000000;
+   text-decoration: none;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://t3.ftcdn.net/jpg/07/04/45/60/360_F_704456052_kquKIl9WcOndDZSYn0bgUULv7tw3P33M.jpg');
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    border-bottom: 2px solid #c7c1c1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #161818;
+}
+
+
+main {
+    margin-bottom: 40px;
+}
+
+
+section {
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bdc3c76b;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Job and Degree Items */
+.job {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+}
+.college {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYxrrcSDGGApXW-zl5hYwK20Cda2aVWZ2aQ&s');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: 570px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3a7ba3; 
+}
+
+.jhs {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnPIVNpMQHV0MhiQadArdW40xPX4QUxLTBIcwkHYhVZeBAYgwG_OnEDHs_cNYiJCyHghI&usqp=CAU');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: 570px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3a7ba3;
+}
+
+.elem {
+     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6qQv53FYd7zjp5fs6kv1ql8cmPvL5lQSLA&s');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: 570px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3a7ba3;
+}
+.job h3 {  
+  font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+
+}
+
+.college h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.jhs h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.elem h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+
+.company, .school {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.job p:last-child, .degree p:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills List */
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+   
+   
+}
+.skills li:hover {
+    box-shadow: 5px 5px 10px 2px rgba(1, 255, 221, 0.801);
+}
+
+
+
+
+.skills li {
+    background-color: #ecf0f17a;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.781);
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 500;
+    border: 1px solid;
+   
+}
+
+.skills #design {
+   background-image: url('https://www.wikitechy.com/html/img/background-img/background-image-attribute.png');
+   background-size: 110px;
+   background-repeat: no-repeat;
+   background-position-y:7px;
+   background-position-x:200px; 
+ 
+  
+}
+.skills #java {
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmVZXpOzlZN-4LnMGJa8-CvPIU4HhESK37Q&s');
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position-y:5px;
+   background-position-x:200px; 
+ 
+
+}
+
+/* Contact Section */
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+        .navbar {
+            margin: 20px;
+            border: 1px solid;
+            background: linear-gradient(135deg, #fcfcfc 0%, #f3f3f3 100%);
+            padding: 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 20px 15px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 100px;
+            font-size: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #00ffff;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .nav-link {
+                text-align: center;
+                padding: 15px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+        }
+
+        /* Active state */
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #71cae0;
+        }
+
+        .nav-link.active::after {
+            width: 80%;
+        }
+        button:hover {
+             background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+             background-color: #00ffff;
+            transition: all 0.3s ease;
+         
+
+        }
+        button {
+            display: block;
+            padding: 20px 15px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 100px;
+            font-size: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+</style>
+
+   </head>
+<body>
+ 
+    <header id="home">
+        <h1>JOHN RUPERT B. SEGARINO</h1>
+        <p>BIndTech Student </p>
+        <img src="c:\Users\segar\Downloads\e78624ee-233b-4c59-88fd-ea84bd0e85c6.jpg" width="200px"  alt="PICTURE">
+        <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#personal" class="nav-link">Personal</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+             I am a dedicated Computer Technology student with a solid foundation in web design. My background has equipped me with a keen eye for user-centric design and front-end development principles.
+              I am driven by a strong passion for growth and am highly adaptable, always eager to embrace new challenges and technologies to deliver effective solutions.
+            </p>
+            <p>
+               I have a practical background in web design, where I developed skills in creating structured and visually engaging layouts. This is paired with experience in C++ programming, which has given me a deep understanding of logical structuring, data handling,
+                and computational thinking. This blend of high-level design and low-level logic makes me a versatile and analytical problem-solver.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <h3>None At The Moment</h3>
+                <p>I am futher strengthening my Knowledge and Skills in college at this moment</p>
+            </div>
+
+    
+           
+        </section>
+
+
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <div class="college">
+                <h3>COLLEGE - BIT (MAJOR IN COMPUTER TECHNOLOGY)</h3>
+                <p class="school">Lapu-Lapu - City Colloge</p>
+                <p> B. Benedicto St., Lapu-Lapu City, Cebu</p>
+             </div>
+            
+            <div class="jhs">
+                <h3>JUNIOR-SENIOR HIGH SCHOOL-STEM</h3>
+                <p class="school">Saint Dominic Savio International School</p>
+                <p>Located in San Miguel, Cordova</p>
+            </div>
+
+            <div class="elem">
+                <h3>ELEMENTARY SCHOOL</h3>
+                <p class="school">Kalawisan Elementary School</p>
+                <p>Located in Calawisan, Lapu-Lapu City</p>
+            </div>
+        </section>
+
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+               <li id="design"><a href="https://www.interaction-design.org/literature/topics/web-design?srsltid=AfmBOorsXFQGVwSOvX8AG_Y8XlhQ8TAIGrhkINnW_76gxmumYons8tTH" target="_blank"> Designing</a></li>
+                <li id="java"> <a href="https://www.logiscool.com/en/blog/coding-tech/programming-explained-what-is-it-and-what-is-it-good-for" target="_blank">C++/Java Programming</a></li>
+            </ul>
+
+           
+        </section>
+
+
+        <section class="personal" id="personal">
+            <h2>Personal Life</h2>
+            <p>
+                My life, at nineteen, is deeply enriched by my wonderful family in Lapu-Lapu City. I have three siblings, and together with our incredible mother and father,
+                 we form a close-knit and joyful unit. What makes our family truly special is the unconditional support that flows freely between us. We are each other's biggest 
+                 cheerleaders during times of success and a sturdy shoulder to lean on during times of struggle. This lifelong 
+                commitment to lifting each other up is the source of our great happiness and the foundation of a home filled with love, respect, and endless encouragement.
+            </p>
+            <p>
+               I'm a person who finds joy in both creation and exploration. My hands are usually busy painting, drawing, or 
+               playing games, while my soul is refreshed by regular walks in the fresh air. My adventures have taken me to the beautiful local
+                islands of Bohol and Masbate, and these experiences have filled me with a great appreciation for the natural wonders we have right here in the Philippines.
+
+
+            </p>
+        </section>
+
+     
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFqvRPsZVWvztvcCLZpdfSwldqhvPKjBNCwzspZjQBMqkKNgCQFnzwvQmKCthRwdnQSqjz" class="__cf_email__" target="_blank" data-cfemail="621b0d17104c070f030b0e22071a030f120e074c010d0f">[segarino.johnrupert@llcc.edu.ph]</a></p>
+            <p>Phone: 09218602054</p>
+            <p>Location: Zone Lato, Calawisan, Lapu-Lapu City, Cebu</p>
+            <p>Facebook: <a href="https://www.facebook.com/johnrupert.segarino.2025" target="_blank">Johnrupert Segarino</a></p>
+        </section>
+    </main>
+
+     <center><a href="#home" ><button>BACK TO HOME</button></a></center>
+
+   
+    <footer>
+        <p>2025 John Rupert B. Segarino. Simple autobiography</p>
+    </footer>
+
+    
+
+</html>
+    
+</body>
+
+</html>
